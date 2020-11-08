@@ -1,11 +1,5 @@
-# skillmax
+# SkillMAX
+
 Skill MAX Course official web site
 
- ____    __  __   ______   __       __                ______   __   __
-/\  _`\ /\ \/\ \ /\__  _\ /\ \     /\ \       /'\_/`\/\  _  \ /\ \ /\ \
-\ \,\L\_\ \ \/'/'\/_/\ \/ \ \ \    \ \ \     /\      \ \ \L\ \\ `\`\/'/'
- \/_\__ \\ \ , <    \ \ \  \ \ \  __\ \ \  __\ \ \__\ \ \  __ \`\/ > <
-   /\ \L\ \ \ \\`\   \_\ \__\ \ \L\ \\ \ \L\ \\ \ \_/\ \ \ \/\ \  \/'/\`\
-   \ `\____\ \_\ \_\ /\_____\\ \____/ \ \____/ \ \_\\ \_\ \_\ \_\ /\_\\ \_\
-    \/_____/\/_/\/_/ \/_____/ \/___/   \/___/   \/_/ \/_/\/_/\/_/ \/_/ \/_/
-
+<p align="center"><a href="https://vestop.github.io" target="_blank" rel="noopener noreferrer"><img src="src/images/logo-big.svg?raw=true" alt="re-frame logo"></a></p>
