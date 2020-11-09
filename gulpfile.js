@@ -112,7 +112,7 @@ const watchChanges = () => {
   watch("src/**/*.html", series(html, paths));
   watch("src/**/*.scss", series(styles));
   watch("src/js/**/*.js", series(scripts));
-  watch(["src/fonts/**/*", "src/img/**/*"], series(copy));
+  watch(["src/fonts/**/*", "src/images/**/*"], series(copy));
 };
 
 exports.watchChanges = watchChanges;

@@ -2,4 +2,41 @@
 @import "vars";
 @import "utils";
 @import "layout";
+@import "page/about";
 @import "components";
+
+::selection {
+  background-color: #d24c59;
+}
+
+.primary-heading {
+  position: relative;
+  padding-bottom: 10px;
+  font-weight: 900;
+  font-size: 60px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    top: 72%;
+    left: 400px;
+    width: 140px;
+    height: 5px;
+    background-color: #d24c59;
+    border-radius: 3px;
+    content: "";
+  }
+}
+
+.description {
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  font-style: italic;
+}

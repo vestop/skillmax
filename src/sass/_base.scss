@@ -16,27 +16,26 @@ body {
   font-weight: 400;
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  background-color: #000;
+  background-image: url(../images/bg/dark-mosaic.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: auto;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 .page-header {
   position: relative;
   z-index: 11;
   min-height: 60px;
   color: #fff;
-  background-color: #000000;
-  background-image: repeating-linear-gradient(
-      150deg,
-      rgba(255, 255, 255, 0.15),
-      rgba(255, 255, 255, 0.15) 1px,
-      transparent 0,
-      transparent 41px
-    ),
-    repeating-linear-gradient(
-      -150deg,
-      rgba(255, 255, 255, 0.15),
-      rgba(255, 255, 255, 0.15) 1px,
-      transparent 0,
-      transparent 41px
-    );
 }
 .page-header__top {
   position: fixed;
@@ -84,7 +83,7 @@ body {
   margin-bottom: 5px;
 }
 .menu-nav__phone:hover {
-  color: #d23c59;
+  color: #d24c59;
 }
 .menu-nav__btn {
   z-index: 101;
