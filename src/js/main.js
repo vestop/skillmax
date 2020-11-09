@@ -13,4 +13,5 @@ window.addEventListener("load", () => {
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('active');
   menu.classList.toggle('active');
+  document.body.classList.toggle('locked')
 });

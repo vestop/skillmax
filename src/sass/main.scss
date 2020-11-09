@@ -8,23 +8,28 @@
 ::selection {
   background-color: #d24c59;
 }
-
+.locked {
+  overflow: hidden;
+}
 .primary-heading {
   position: relative;
+  z-index: 5;
+  display: block;
   padding-bottom: 10px;
   font-weight: 900;
   font-size: 60px;
   letter-spacing: 0.1em;
+
   text-transform: uppercase;
 
   &::after {
     position: absolute;
-    top: 72%;
+    top: 45%;
     left: 400px;
+    z-index: -1;
     width: 140px;
-    height: 5px;
+    height: 40px;
     background-color: #d24c59;
-    border-radius: 3px;
     content: "";
   }
 }
@@ -39,4 +44,12 @@
   font-weight: 500;
   font-size: 40px;
   font-style: italic;
+}
+
+.b6-h {
+  font-size: 45px;
+}
+.b6-h::after {
+  top: 55%;
+  height: 30px;
 }
