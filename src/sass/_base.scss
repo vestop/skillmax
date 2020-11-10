@@ -95,7 +95,6 @@ a {
   padding: 10px 0;
   background-color: transparent;
   border: 0;
-  outline: none;
   cursor: pointer;
 }
 .menu-nav__btn span {
@@ -106,7 +105,7 @@ a {
   background-color: #fff;
   border-radius: 3px;
 }
-.menu-nav__btn:focus,
+
 .menu-nav__btn:hover {
   opacity: 0.7;
 }
@@ -115,7 +114,7 @@ a {
   position: absolute;
   right: 0;
   border-radius: 3px;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   content: "";
 }
 
