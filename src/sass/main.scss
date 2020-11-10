@@ -4,10 +4,15 @@
 @import "layout";
 @import "page/about";
 @import "components";
+@import "fonts";
 
 ::selection {
   background-color: #d24c59;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
+
 .locked {
   overflow: hidden;
 }
@@ -17,7 +22,7 @@
   display: block;
   padding-bottom: 10px;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 55px;
   letter-spacing: 0.1em;
 
   text-transform: uppercase;
@@ -36,12 +41,12 @@
 
 .description {
   margin-bottom: 20px;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 35px;
 }
 
 .title {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 40px;
   font-style: italic;
 }

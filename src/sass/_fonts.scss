@@ -1,0 +1,49 @@
+$font-path: "../fonts/";
+
+@font-face {
+  font-weight: 300;
+
+  font-family: "TT Norms Pro";
+  src: url("#{$font-path}/TTNormsPro-Light.woff2") format("woff2");
+}
+@font-face {
+  font-weight: 300;
+
+  font-family: "TT Norms Pro";
+  font-style: italic;
+  src: url("#{$font-path}/TTNormsPro-LightItalic.woff2") format("woff2");
+}
+@font-face {
+  font-weight: 400;
+
+  font-family: "TT Norms Pro";
+  src: url("#{$font-path}/TTNormsPro-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-weight: 400;
+
+  font-family: "TT Norms Pro";
+  font-style: italic;
+
+  font-style: italic;
+  src: url("#{$font-path}/TTNormsPro-RegularItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 600;
+
+  font-family: "TT Norms Pro";
+  src: url("#{$font-path}/TTNormsPro-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-weight: 700;
+
+  font-family: "TT Norms Pro";
+  src: url("#{$font-path}/TTNormsPro-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-weight: 900;
+
+  font-family: "TT Norms Pro";
+  src: url("#{$font-path}/TTNormsPro-Black.woff2") format("woff2");
+}

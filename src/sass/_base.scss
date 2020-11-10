@@ -15,7 +15,7 @@ body {
   color: #333;
   font-weight: 400;
   font-size: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "TT Norms Pro", "Segoe UI", sans-serif;
   line-height: 1.7;
   background-color: #000;
   background-image: url(../images/bg/dark-mosaic.png);
@@ -44,7 +44,7 @@ a {
   left: 0;
   z-index: 100;
   padding: 10px 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
 }
 .main-nav {
@@ -115,7 +115,7 @@ a {
   position: absolute;
   right: 0;
   border-radius: 3px;
-  transition: right 0.3s ease-out;
+  transition: all 0.3s ease-out;
   content: "";
 }
 
@@ -135,6 +135,7 @@ a {
 
 .active.menu-nav__btn span::before {
   right: 13px;
+  transform: rotate(-180deg);
 }
 
 .container {
@@ -259,7 +260,7 @@ a {
   min-width: 320px;
   min-height: 100vh;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   transform: scaleX(5);
   visibility: hidden;
   opacity: 0;

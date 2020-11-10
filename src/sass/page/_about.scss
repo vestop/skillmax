@@ -3,6 +3,7 @@
   &__wrapper {
     position: relative;
     display: block;
+
     margin-bottom: 50px;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
@@ -24,14 +25,14 @@
     font-weight: 400;
     font-size: 18px;
     text-align: initial;
-    border-bottom: 1px dotted #cdcdcd;
+    border-bottom: 4px dashed #cdcdcd;
     p {
       margin-bottom: 15px;
     }
     strong {
       padding: 0 5px;
       font-weight: 700;
-      border: 1px dashed #d8d8d8;
+      border-left: 5px solid #d32c59;
       transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       &:hover {
         color: #fff;
@@ -41,8 +42,8 @@
   }
   &__list {
     max-width: 410px;
-    padding: 20px 15px;
-    border: 1px dashed #333;
+    padding: 15px;
+    border-left: 3px dashed #d32c59;
     border-radius: 30px;
   }
   &__item {
@@ -101,8 +102,10 @@
 }
 .b {
   position: relative;
-  width: 100%;
-  margin-left: auto;
+  @media (min-width: 1200px) {
+    width: 80%;
+    margin-left: auto;
+  }
 }
 .b2 {
   text-align: center;
@@ -112,18 +115,20 @@
 }
 
 .a-dec-7 {
-  top: 40%;
-  right: -200px;
+  top: 45%;
+  right: -240px;
   transform: rotate(90deg);
 }
 .a-dec-8 {
-  top: 15%;
+  top: 10%;
   left: -240px;
   transform: rotate(-90deg);
 }
 
 .b6 {
-  width: 80%;
-  margin-right: 0;
-  margin-left: auto;
+  @media (min-width: 1200px) {
+    width: 80%;
+    margin-right: 0;
+    margin-left: auto;
+  }
 }
