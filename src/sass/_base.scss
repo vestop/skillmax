@@ -5,6 +5,9 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 * {
   box-sizing: inherit;
@@ -114,7 +117,6 @@ a {
   position: absolute;
   right: 0;
   border-radius: 3px;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   content: "";
 }
 
@@ -123,6 +125,7 @@ a {
   width: 17px;
   height: 4px;
   background-color: #d24c59;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .menu-nav__btn span::after {
@@ -184,9 +187,6 @@ a {
   font-size: 30px;
   line-height: 1.333em;
   text-align: left;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .button {
@@ -264,7 +264,7 @@ a {
   visibility: hidden;
   opacity: 0;
   backdrop-filter: blur(5px);
-  transition: opacity 0.3s, visibility 0.3s, transform 0.5s 0s;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.5s 0s ease-out;
   user-select: none;
   -webkit-overflow-scrolling: touch;
 }
