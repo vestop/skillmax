@@ -7,26 +7,32 @@
   &__input,
   &__area {
     width: 100%;
-    padding: 20px 10px;
-    font-size: 16px;
+    padding: 16px 20px;
+    font-size: 15px;
     font-family: inherit;
-    border: 0;
-    border-radius: 8px;
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
-    transition: box-shadow 0.5s linear;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 15px;
+    box-shadow: 9px 6px 15px 0px rgba(111, 111, 111, 0.25);
+    transition: all 0.3s;
+    animation: shad-anim infinite 3s linear;
 
     &:not(:last-child) {
       margin-bottom: 25px;
     }
 
     &:focus {
+      border-bottom: 3px solid #d24c59;
       outline: none;
-      box-shadow: 2px 5px 25px 0px rgba(235, 57, 75, 0.2);
+      box-shadow: 9px 6px 20px 0px rgba(173, 77, 77, 0.2);
+      animation: none;
     }
 
     &::placeholder {
-      color: rgb(168, 168, 168);
-      font-size: 14px;
+      color: rgb(39, 39, 39);
+      font-size: 15px;
+      font-family: inherit;
       letter-spacing: 0.05em;
     }
   }
@@ -42,6 +48,77 @@
   }
 }
 
+@keyframes shad-anim {
+  0% {
+    box-shadow: 12px 6px 15px 0px rgba(111, 111, 111, 0.25);
+  }
+  50% {
+    box-shadow: -12px 6px 20px 0px rgba(111, 111, 111, 0.25);
+  }
+  100% {
+    box-shadow: 12px 6px 15px 0px rgba(111, 111, 111, 0.25);
+  }
+}
+
 .mt-md {
   margin-bottom: 50px;
+}
+
+.footer {
+  padding: 20px 0;
+  &__item {
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+  }
+
+  &__info {
+    flex: 0 0 33%;
+    margin-left: 18px;
+  }
+  &__map {
+    flex: 0 0 66%;
+
+    margin-right: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__bottom {
+    position: relative;
+    padding: 25px 0;
+  }
+  &__socials {
+    display: flex;
+  }
+
+  &__social-item {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.heading-small {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+  border-bottom: 5px double #adadad;
 }
